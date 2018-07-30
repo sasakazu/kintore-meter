@@ -45,6 +45,13 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vnp-Zl-wFn" id="e3c-WY-Q4h">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ga-yi-fBS">
+                                                    <rect key="frame" x="312" y="24" width="37" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Done"/>
+                                                </button>
+                                            </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="RRE-IX-hPO" kind="showDetail" id="Jot-bx-4Hx"/>
@@ -65,6 +72,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="キントレメーター" id="fQm-8L-m9C">
+                        <barButtonItem key="leftBarButtonItem" title="Reset" id="v9Q-d2-j2B"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="L7t-XZ-749">
                             <connections>
                                 <segue destination="4g7-2Z-lRg" kind="showDetail" id="Egb-7z-XSr"/>
