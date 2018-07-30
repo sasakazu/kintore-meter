@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7379BCC6210EF4DE00EC1E42 /* kintoreMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379BCC5210EF4DE00EC1E42 /* kintoreMainViewController.swift */; };
+		7379BCC8210EF50500EC1E42 /* addMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379BCC7210EF50500EC1E42 /* addMenuViewController.swift */; };
+		7379BCCA210EF52D00EC1E42 /* progressMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379BCC9210EF52D00EC1E42 /* progressMenuViewController.swift */; };
 		738BF66D210DA93D00031F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738BF66C210DA93D00031F23 /* AppDelegate.swift */; };
 		738BF66F210DA93D00031F23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738BF66E210DA93D00031F23 /* ViewController.swift */; };
 		738BF672210DA93D00031F23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738BF670210DA93D00031F23 /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7379BCC5210EF4DE00EC1E42 /* kintoreMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kintoreMainViewController.swift; sourceTree = "<group>"; };
+		7379BCC7210EF50500EC1E42 /* addMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addMenuViewController.swift; sourceTree = "<group>"; };
+		7379BCC9210EF52D00EC1E42 /* progressMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressMenuViewController.swift; sourceTree = "<group>"; };
 		738BF669210DA93D00031F23 /* kin-meter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kin-meter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		738BF66C210DA93D00031F23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		738BF66E210DA93D00031F23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 				738BF66C210DA93D00031F23 /* AppDelegate.swift */,
 				738BF66E210DA93D00031F23 /* ViewController.swift */,
 				738BF670210DA93D00031F23 /* Main.storyboard */,
+				7379BCC9210EF52D00EC1E42 /* progressMenuViewController.swift */,
+				7379BCC7210EF50500EC1E42 /* addMenuViewController.swift */,
+				7379BCC5210EF4DE00EC1E42 /* kintoreMainViewController.swift */,
 				738BF676210DA94000031F23 /* Assets.xcassets */,
 				738BF678210DA94000031F23 /* LaunchScreen.storyboard */,
 				738BF67B210DA94000031F23 /* Info.plist */,
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7379BCC8210EF50500EC1E42 /* addMenuViewController.swift in Sources */,
 				738BF66F210DA93D00031F23 /* ViewController.swift in Sources */,
+				7379BCCA210EF52D00EC1E42 /* progressMenuViewController.swift in Sources */,
 				738BF675210DA93D00031F23 /* kin_meter.xcdatamodeld in Sources */,
+				7379BCC6210EF4DE00EC1E42 /* kintoreMainViewController.swift in Sources */,
 				738BF66D210DA93D00031F23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
