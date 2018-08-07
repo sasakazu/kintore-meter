@@ -10,8 +10,6 @@ import UIKit
 
 class kintoreMainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let data = ["ピカチュウ", "コラッタ", "イーブイ", "カビゴン", "ポッポ"]
-    
     
     
     @IBOutlet weak var mainTableView: UITableView!
@@ -23,22 +21,33 @@ class kintoreMainViewController: UIViewController, UITableViewDataSource, UITabl
         mainTableView.delegate = self
         mainTableView.dataSource = self
         
+        if UserDefaults.standard.object(forKey: "TodoList") != nil {
+            TodoKobetsunonakami = UserDefaults.standard.object(forKey: "TodoList") as! [String]
+        }
+        
     }
+    
+    
+   
+    
+    @IBAction func editBtn(_ sender: Any) {
+        
+        
+    }
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return TodoKobetsunonakami.count
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
-        cell.textLabel?.text = data[indexPath.row]
-        
-        return cell
     
+        let TodoCell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        TodoCell.textLabel!.text = TodoKobetsunonakami[indexPath.row]
+        
+        return TodoCell
     }
     
     

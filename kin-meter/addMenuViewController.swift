@@ -8,8 +8,13 @@
 
 import UIKit
 
+
+var TodoKobetsunonakami = [String]()
+
+
 class addMenuViewController: UIViewController {
     
+    @IBOutlet weak var menuTextField: UITextField!
     
     
     
@@ -20,6 +25,20 @@ class addMenuViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func addBtn(_ sender: Any) {
+        
+        TodoKobetsunonakami.append(menuTextField.text!)
+        
+        UserDefaults.standard.set( TodoKobetsunonakami, forKey: "TodoList" )
+        
+        let storyboard: UIStoryboard = self.storyboard!
+        
+        let nextView = storyboard.instantiateViewController(withIdentifier: "tab")
+        
+        self.present(nextView, animated: true, completion: nil)
+        
+    }
     
     
     @IBAction func cancelBtn(_ sender: Any) {
