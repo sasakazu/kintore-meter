@@ -8,24 +8,20 @@
 
 import UIKit
 
+
 class progressMenuViewController: UIViewController {
     
+   
     
+    
+    @IBOutlet weak var trainingName: UILabel!
+   
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      
         
-    }
     
-    
-    @IBAction func cancelBtn(_ sender: Any) {
-        
-        dismiss(animated: true, completion: nil)
-        
-        
     }
     
 

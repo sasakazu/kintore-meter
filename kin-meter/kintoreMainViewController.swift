@@ -35,7 +35,6 @@ class kintoreMainViewController: UIViewController, UITableViewDataSource, UITabl
     
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-      
         
         if editingStyle == .delete {
             

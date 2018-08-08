@@ -293,6 +293,9 @@
                         <viewLayoutGuide key="safeArea" id="yYG-95-5Uq"/>
                     </view>
                     <navigationItem key="navigationItem" id="Na8-yP-eB6"/>
+                    <connections>
+                        <outlet property="trainingName" destination="dih-gY-mxD" id="tfY-y2-lMV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKc-nY-zv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
