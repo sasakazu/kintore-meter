@@ -9,7 +9,7 @@
 import UIKit
 
 class kintoreMainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+  
     
     
     @IBOutlet weak var mainTableView: UITableView!
@@ -25,21 +25,46 @@ class kintoreMainViewController: UIViewController, UITableViewDataSource, UITabl
             TodoKobetsunonakami = UserDefaults.standard.object(forKey: "TodoList") as! [String]
         }
         
+        
+        
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
     }
     
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+      
+        
+        if editingStyle == .delete {
+            
+            TodoKobetsunonakami.remove(at: indexPath.row)
+            
+            tableView.deleteRows(at: [indexPath as IndexPath], with: .fade)
+            
+            let userDefaults = UserDefaults.standard
+            userDefaults.set(TodoKobetsunonakami, forKey: "TodoList")
+            userDefaults.synchronize()
+            
+        }
+    }
    
     
     @IBAction func editBtn(_ sender: Any) {
         
         
     }
-    
-    
+ 
+        
+        
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return TodoKobetsunonakami.count
     }
+    
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
@@ -50,6 +75,8 @@ class kintoreMainViewController: UIViewController, UITableViewDataSource, UITabl
         return TodoCell
     }
     
+  
+    
     
 
     override func didReceiveMemoryWarning() {
@@ -58,6 +85,6 @@ class kintoreMainViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
 
-   
+
 
 }
